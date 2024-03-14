@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:35:04 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/11 16:38:50 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/14 22:08:00 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*ptr;
 	size_t	i;
 	size_t	slen;
-	int		finish;
+	size_t	finish;
 
 	i = 0;
 	slen = ft_strlen(s);

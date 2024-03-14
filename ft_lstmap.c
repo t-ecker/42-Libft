@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/09 18:34:42 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/14 21:52:50 by tecker           ###   ########.fr       */
+/*   Created: 2024/03/14 15:42:34 by tecker            #+#    #+#             */
+/*   Updated: 2024/03/14 23:50:28 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	size_t	i;
+	t_list	*list;
+	t_list	*node;
+	t_list	*temp;
 
-	i = 0;
-	while ((s1[i] || s2[i]) && i < n)
+	list = NULL;
+	if (!lst || !f || !del)
+		return (NULL);
+	while (lst)
 	{
-		if (s1[i] != s2[i])
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-		i++;
+		temp = (*f)(lst->content);
+		node = ft_lstnew(temp);
+		if (!node)
+		{
+			del (temp);
+			ft_lstclear(&list, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&list, node);
+		lst = lst->next;
 	}
-	return (0);
+	if (!list)
+		return (NULL);
+	return (list);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main(void)
-// {
-//     char s1[] = "Hallo";
-//     char s2[] = "Halloew";
-//     printf("%i\n", ft_strncmp(s1, s2, 7));
-//     printf("%i\n", strncmp(s1, s2, 7));
-// }

@@ -5,28 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/09 18:33:50 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/14 16:14:41 by tecker           ###   ########.fr       */
+/*   Created: 2024/03/14 23:08:20 by tecker            #+#    #+#             */
+/*   Updated: 2024/03/14 23:08:54 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	len(const char *s, char c)
-{
-	int	i;
-	int	len;
+// static int	len(const char *s, char c)
+// {
+// 	int	i;
+// 	int	len;
 
-	i = 0;
-	len = 0;
-	while (s[i])
-	{
-		if (s[i] != c)
-			len++;
-		i++;
-	}
-	return (len);
-}
+// 	i = 0;
+// 	len = 0;
+// 	while (s[i])
+// 	{
+// 		if (s[i] != c)
+// 			len++;
+// 		i++;
+// 	}
+// 	return (len);
+// }
 
 static int	num_splits(const char *s, char c)
 {
@@ -55,28 +55,55 @@ static void	*ft_free(int a1, char **str)
 	return (NULL);
 }
 
+// static void	*split2(int a1, const char *s, char c, char **str)
+// {
+// 	int	j;
+// 	int	a2;
+
+// 	j = 0;
+// 	while (s[j] && s[j] == c)
+// 		j++;
+// 	while (a1 < num_splits(s, c))
+// 	{
+// 		a2 = 0;
+// 		while (s[j] == c)
+// 			j++;
+// 		str[a1] = malloc(sizeof(char) * (len(s + j, c) + 1));
+// 		if (str[a1] == NULL)
+// 			return (ft_free(a1, str));
+// 		while (s[j] != c && s[j])
+// 		{
+// 			str[a1][a2] = s[j];
+// 			a2++;
+// 			j++;
+// 		}
+// 		str[a1][a2] = '\0';
+// 		a1++;
+// 	}
+// 	str[num_splits(s, c)] = NULL;
+// 	return (str);
+// }
+
 static void	*split2(int a1, const char *s, char c, char **str)
 {
 	int	j;
 	int	a2;
+	int	len;
 
 	j = 0;
-	while (s[j] && s[j] == c)
-		j++;
 	while (a1 < num_splits(s, c))
 	{
-		a2 = 0;
-		while (s[j] == c)
+		len = 0;
+		while (s[j] && s[j] == c)
 			j++;
-		str[a1] = malloc(sizeof(char) * (len(s + j, c) + 1));
+		while (s[j + len] && s[j + len] != c)
+			len++;
+		str[a1] = malloc(sizeof(char) * (len + 1));
 		if (str[a1] == NULL)
 			return (ft_free(a1, str));
-		while (s[j] != c && s[j])
-		{
-			str[a1][a2] = s[j];
-			a2++;
-			j++;
-		}
+		a2 = 0;
+		while (len--)
+			str[a1][a2++] = s[j++];
 		str[a1][a2] = '\0';
 		a1++;
 	}

@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:32:53 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/10 15:48:02 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/14 21:16:41 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,6 @@ static char	*ft_writenbr(char *ptr, int n, int c, int i)
 
 char	*ft_itoa(int n)
 {
-	int		d;
 	char	*ptr;
 	int		i;
 	int		c;

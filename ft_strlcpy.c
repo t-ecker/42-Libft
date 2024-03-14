@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:24 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/11 17:31:58 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/14 21:52:05 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (destsize > 0)

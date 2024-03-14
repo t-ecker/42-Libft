@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/09 18:35:17 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/14 20:37:11 by tecker           ###   ########.fr       */
+/*   Created: 2024/03/14 13:42:51 by tecker            #+#    #+#             */
+/*   Updated: 2024/03/14 22:15:27 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	if (c >= 'a' && c <= 'z')
-		c -= 32;
-	return (c);
+	if (*lst)
+		ft_lstlast(*lst)->next = new;
+	else
+		*lst = new;
 }
-
-// #include <stdio.h>
-// #include <ctype.h>
-// int main(void)
-// {
-//     printf("%c\n", ft_toupper('!'));
-//     printf("%c\n", toupper('!'));
-// }

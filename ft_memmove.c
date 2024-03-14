@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:33:19 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/09 20:29:53 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/14 22:00:46 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	outsource(int i, char *d, char *s, size_t n)
 {
 	i = 0;
-	while (i < n)
+	while (i < (int)n)
 	{
 		d[i] = s[i];
 		i++;
@@ -28,13 +28,14 @@ void	*ft_memmove(void *dest, void *src, size_t n)
 	char	*d;
 	int		i;
 
+	i = 0;
 	d = (char *)dest;
 	s = (char *)src;
 	if (!dest && !src)
 		return (NULL);
 	if (d > s)
 	{
-		i = n - 1;
+		i = (int)n - 1;
 		while (i >= 0)
 		{
 			d[i] = s[i];

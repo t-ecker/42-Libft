@@ -1,37 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/09 18:34:42 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/14 21:52:50 by tecker           ###   ########.fr       */
+/*   Created: 2024/03/14 15:30:22 by tecker            #+#    #+#             */
+/*   Updated: 2024/03/14 22:12:02 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	size_t	i;
+	t_list	*temp;
 
-	i = 0;
-	while ((s1[i] || s2[i]) && i < n)
+	while (*lst)
 	{
-		if (s1[i] != s2[i])
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-		i++;
+		temp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = temp;
 	}
-	return (0);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main(void)
-// {
-//     char s1[] = "Hallo";
-//     char s2[] = "Halloew";
-//     printf("%i\n", ft_strncmp(s1, s2, 7));
-//     printf("%i\n", strncmp(s1, s2, 7));
-// }

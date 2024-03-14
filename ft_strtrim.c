@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:59 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/11 14:39:14 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/14 21:55:25 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@
 // 	}
 // 	return (start);
 // }
-static int	ft_strwrite(int start, int end, char *ptr, char *s1)
+static int	ft_strwrite(int start, int end, char *ptr, const char *s1)
 {
 	int	i;
 

@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/09 18:35:17 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/14 20:37:11 by tecker           ###   ########.fr       */
+/*   Created: 2024/03/14 13:35:46 by tecker            #+#    #+#             */
+/*   Updated: 2024/03/14 22:12:57 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+t_list	*ft_lstlast(t_list *lst)
 {
-	if (c >= 'a' && c <= 'z')
-		c -= 32;
-	return (c);
+	if (!lst)
+		return (NULL);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }
-
-// #include <stdio.h>
-// #include <ctype.h>
-// int main(void)
-// {
-//     printf("%c\n", ft_toupper('!'));
-//     printf("%c\n", toupper('!'));
-// }

@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:37 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/10 11:45:14 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/14 21:52:35 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*ptr;
-	int		i;
+	size_t	i;
 
 	i = 0;
 	ptr = malloc((ft_strlen(s) + 1) * sizeof(char));

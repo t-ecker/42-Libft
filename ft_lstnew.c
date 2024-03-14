@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/09 18:35:17 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/14 20:37:11 by tecker           ###   ########.fr       */
+/*   Created: 2024/03/14 13:19:48 by tecker            #+#    #+#             */
+/*   Updated: 2024/03/14 22:15:45 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+t_list	*ft_lstnew(void *content)
 {
-	if (c >= 'a' && c <= 'z')
-		c -= 32;
-	return (c);
-}
+	t_list	*ptr;
 
-// #include <stdio.h>
-// #include <ctype.h>
-// int main(void)
-// {
-//     printf("%c\n", ft_toupper('!'));
-//     printf("%c\n", toupper('!'));
-// }
+	ptr = malloc(sizeof(*ptr));
+	if (!ptr)
+		return (NULL);
+	ptr->content = content;
+	ptr->next = NULL;
+	return (ptr);
+}

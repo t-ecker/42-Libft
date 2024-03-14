@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:32:58 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/10 10:36:54 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/14 22:08:24 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*str;
 
 	str = (unsigned char *)s;
