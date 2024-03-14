@@ -6,13 +6,13 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:47 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/09 20:36:13 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/11 17:31:11 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(char *s1, char *s2, size_t n)
+char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
 	int	i;
 	int	j;

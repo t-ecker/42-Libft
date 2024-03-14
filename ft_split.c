@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:33:50 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/11 15:47:00 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/14 12:38:45 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,17 +105,22 @@ char	**ft_split(char const *s, char c)
 // #include <stdio.h>
 // int main(void)
 // {
-//     char d = '!';
-//     char str[] = "!!Hallo!!Welt!#!asd";
-//     printf("%i\n", len(str, d));
-//     printf("%i\n", num_splits(str, d));
+//     char *input_string;
+// 	*input_string = 0;
+//     char delimiter = 0;
+//     char **tab;
+// 	tab = ft_split(input_string, delimiter);
+// 	// printf("%s\n", tab);
+//     // printf("%i\n", len(tab, d));
+//     // printf("%i\n", num_splits(tab, d));
 //     int i = 0;
-//     char **result = ft_split(str, d);
-//     while (i < num_splits(str, d))
-//     {
-//         printf("%s\n", result[i]);
-//         i++;
-//     }
-//     free(result);
+//     // char **result = ft_split(tab, d);
+//     // while (i < 2)
+//     // {
+//     //     printf("%s\n", tab[i]);
+//     //     i++;
+//     // }
+// 	printf("%s\n", tab[0]);
+//     free(tab);
 //     return (0);
 // }

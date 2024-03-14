@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 19:30:07 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/10 15:51:28 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/14 13:11:22 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,13 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-int			ft_atoi(char *str);
+typedef struct s_list
+{
+void *content;
+struct s_list *next;
+} t_list;
+
+int			ft_atoi(const char *str);
 void		*ft_bzero(void *str, size_t len);
 void		*ft_calloc(size_t count, size_t size);
 int			ft_isalnum(int c);
@@ -40,12 +46,12 @@ char		*ft_strchr(const char *src, int c);
 char		*ft_strdup(char *s1);
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
 char		*ft_strjoin(char const *s1, char const *s2);
-size_t		ft_strlcat(char *dest, char *src, size_t destsize);
-size_t		ft_strlcpy(char *dest, char *src, size_t destsize);
+size_t		ft_strlcat(char *dest, const char *src, size_t destsize);
+size_t		ft_strlcpy(char *dest, const char *src, size_t destsize);
 size_t		ft_strlen(char const *src);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
-char		*ft_strnstr(char *s1, char *s2, size_t n);
+char		*ft_strnstr(const char *s1, const char *s2, size_t n);
 char		*ft_strrchr(const char *src, int c);
 char		*ft_strtrim(char const *s1, char const *set);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
