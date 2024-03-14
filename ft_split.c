@@ -6,13 +6,11 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:33:50 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/14 12:38:45 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/14 16:14:41 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-#include <stdlib.h>
 
 static int	len(const char *s, char c)
 {
@@ -30,7 +28,7 @@ static int	len(const char *s, char c)
 	return (len);
 }
 
-int	num_splits(const char *s, char c)
+static int	num_splits(const char *s, char c)
 {
 	int	count;
 	int	i;
@@ -46,7 +44,7 @@ int	num_splits(const char *s, char c)
 	return (count);
 }
 
-void	*ft_free(int a1, char **str)
+static void	*ft_free(int a1, char **str)
 {
 	while (a1 > 0)
 	{
@@ -63,7 +61,7 @@ static void	*split2(int a1, const char *s, char c, char **str)
 	int	a2;
 
 	j = 0;
-	while (s[j] == c)
+	while (s[j] && s[j] == c)
 		j++;
 	while (a1 < num_splits(s, c))
 	{
@@ -79,10 +77,10 @@ static void	*split2(int a1, const char *s, char c, char **str)
 			a2++;
 			j++;
 		}
-		str[a1][a2] = 0;
+		str[a1][a2] = '\0';
 		a1++;
 	}
-	str[num_splits(s, c)] = 0;
+	str[num_splits(s, c)] = NULL;
 	return (str);
 }
 
@@ -90,12 +88,12 @@ char	**ft_split(char const *s, char c)
 {
 	char	**str;
 	int		a1;
-	int		a2;
 	int		j;
 
 	a1 = 0;
-	a2 = 0;
 	j = 0;
+	if (!s)
+		return (NULL);
 	str = malloc(sizeof(char *) * (num_splits(s, c) + 1));
 	if (str == NULL)
 		return (NULL);
@@ -105,8 +103,8 @@ char	**ft_split(char const *s, char c)
 // #include <stdio.h>
 // int main(void)
 // {
-//     char *input_string;
-// 	*input_string = 0;
+//     char *input_string = "Hallo";
+// 	// *input_string ;
 //     char delimiter = 0;
 //     char **tab;
 // 	tab = ft_split(input_string, delimiter);
@@ -114,13 +112,13 @@ char	**ft_split(char const *s, char c)
 //     // printf("%i\n", len(tab, d));
 //     // printf("%i\n", num_splits(tab, d));
 //     int i = 0;
-//     // char **result = ft_split(tab, d);
-//     // while (i < 2)
-//     // {
-//     //     printf("%s\n", tab[i]);
-//     //     i++;
-//     // }
-// 	printf("%s\n", tab[0]);
-//     free(tab);
+//     char **result = ft_split(input_string, delimiter);
+//     while (i < num_splits(input_string, delimiter))
+//     {
+//         printf("%s\n", result[i]);
+//         i++;
+//     }
+// 	// printf("%s\n", tab[0]);
+//     free(result);
 //     return (0);
 // }
