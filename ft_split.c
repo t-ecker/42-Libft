@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 23:08:20 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/15 10:22:41 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/15 11:23:18 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ static void	*ft_free(int a1, char **str)
 // 	return (str);
 // }
 
-static void	*split2(int a1, const char *s, char c, char **str)
+static void	*split2(const char *s, char c, char **str)
 {
 	int	j;
 	int	a2;
@@ -109,7 +109,7 @@ static void	*split2(int a1, const char *s, char c, char **str)
 		str[a1][a2] = '\0';
 		a1++;
 	}
-	str[a1] = '\0';
+	str[a1] = 0;
 	return (str);
 }
 
@@ -122,7 +122,7 @@ char	**ft_split(char const *s, char c)
 	str = malloc(sizeof(char *) * (num_splits(s, c) + 1));
 	if (str == NULL)
 		return (NULL);
-	return (split2(a1, s, c, str));
+	return (split2(s, c, str));
 }
 
 // #include <stdio.h>
