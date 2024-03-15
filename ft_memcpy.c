@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:33:10 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/09 20:01:39 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/15 10:07:50 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	s = (char *)src;
 	d = (char *)dest;
 	i = 0;
-	if (!dest && !src)
+	if (!dest || !src)
 		return (NULL);
 	while ((i < n))
 	{

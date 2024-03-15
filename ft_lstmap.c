@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 15:42:34 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/14 23:50:28 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/15 11:13:54 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*temp;
 
 	list = NULL;
-	if (!lst || !f || !del)
-		return (NULL);
 	while (lst)
 	{
 		temp = (*f)(lst->content);

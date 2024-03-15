@@ -6,7 +6,7 @@
 /*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 23:08:20 by tecker            #+#    #+#             */
-/*   Updated: 2024/03/14 23:08:54 by tecker           ###   ########.fr       */
+/*   Updated: 2024/03/15 10:22:41 by tecker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,9 +88,11 @@ static void	*split2(int a1, const char *s, char c, char **str)
 {
 	int	j;
 	int	a2;
+	int	a1;
 	int	len;
 
 	j = 0;
+	a1 = 0;
 	while (a1 < num_splits(s, c))
 	{
 		len = 0;
@@ -107,18 +109,14 @@ static void	*split2(int a1, const char *s, char c, char **str)
 		str[a1][a2] = '\0';
 		a1++;
 	}
-	str[num_splits(s, c)] = NULL;
+	str[a1] = '\0';
 	return (str);
 }
 
 char	**ft_split(char const *s, char c)
 {
 	char	**str;
-	int		a1;
-	int		j;
 
-	a1 = 0;
-	j = 0;
 	if (!s)
 		return (NULL);
 	str = malloc(sizeof(char *) * (num_splits(s, c) + 1));
