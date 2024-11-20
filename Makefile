@@ -50,7 +50,14 @@ SRC_BONUS = \
 	./src/ft_lstclear_bonus.c \
 	./src/ft_lstmap_bonus.c
 
-SRC_EXTRA = ./src/get_next_line/get_next_line.c
+SRC_EXTRA = ./src/get_next_line/get_next_line.c \
+			./src/printf/ft_printf.c \
+			./src/printf/print_c.c \
+			./src/printf/print_x_X.c \
+			./src/printf/print_u.c \
+			./src/printf/print_s.c \
+			./src/printf/print_p.c \
+			./src/printf/print_i_d.c \
 
 OBJ_DIR = ./obj
 OBJ_FILES		=	$(patsubst ./src/%.c, $(OBJ_DIR)/%.o, $(SRC))
