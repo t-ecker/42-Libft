@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:32:16 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:48:24 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 16:52:53 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// writes len amount of \0 bytes to str
 
 void	*ft_bzero(void *str, size_t len)
 {

@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 13:19:48 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:33:47 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:34:18 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// creates new list node
 
 t_list	*ft_lstnew(void *content)
 {

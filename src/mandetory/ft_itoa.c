@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:32:53 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:34:19 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:26:16 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// returns a string containing the number n
 
 static int	digits(int n)
 {

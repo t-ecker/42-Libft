@@ -6,11 +6,14 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 23:08:20 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:34:51 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:25:23 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// returns allocates array of strings
+// the strings are the split parts of s by the delimiter c
 
 static int	num_splits(const char *s, char c)
 {

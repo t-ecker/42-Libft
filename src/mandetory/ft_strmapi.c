@@ -6,7 +6,7 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:37 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:35:16 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:17:38 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 //         c -= 32;
 //     return (c);
 // }
+
+// applies function f on every char of s, but creates new string out of them
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

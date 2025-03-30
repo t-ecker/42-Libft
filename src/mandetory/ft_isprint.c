@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:32:46 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:34:17 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 16:57:37 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// checks if c is a printable character including space
 
 int	ft_isprint(int c)
 {

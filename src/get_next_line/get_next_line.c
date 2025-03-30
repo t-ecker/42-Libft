@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 16:55:43 by tecker            #+#    #+#             */
-/*   Updated: 2024/11/19 23:57:17 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:37:10 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+// returns a line ending with a \n, read from a file descriptor.
 
 char	*find_new_rest(char *c)
 {

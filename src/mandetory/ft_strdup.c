@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:01 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:34:58 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:07:49 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// returns a copy of s1, which got allocated
 
 char	*ft_strdup(char *s1)
 {

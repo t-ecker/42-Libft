@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:33:56 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:34:54 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:07:01 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// locates first occurrence of c in src
 
 char	*ft_strchr(const char *src, int c)
 {

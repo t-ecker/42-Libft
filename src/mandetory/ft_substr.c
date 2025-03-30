@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:35:04 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:35:32 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:22:45 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// returns a allocated substring from s starting at index start until index start + len 
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

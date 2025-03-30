@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:42 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:35:18 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:18:25 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// compares the first n bytes of s1 and s2
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

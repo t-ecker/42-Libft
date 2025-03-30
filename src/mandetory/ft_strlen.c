@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:29 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:35:12 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:16:46 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// returns len of src string
 
 size_t	ft_strlen(char const *src)
 {

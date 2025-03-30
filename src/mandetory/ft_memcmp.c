@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:33:04 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:34:24 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:00:46 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// compares first n bytes of s1 and s2
 
 int	ft_memcmp(void *s1, void *s2, size_t n)
 {

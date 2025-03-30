@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 12:11:00 by tecker            #+#    #+#             */
-/*   Updated: 2024/11/20 13:21:29 by tecker           ###   ########.fr       */
+/*   Updated: 2025/03/30 17:39:26 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+// print formatted output
 
 int	check(int i, int b)
 {

@@ -6,12 +6,14 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:33:19 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:34:29 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:03:16 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
+// Copies len bytes from the memory of src to dst
+// Memories may overlap
 static void	outsource(int i, char *d, char *s, size_t n)
 {
 	i = 0;

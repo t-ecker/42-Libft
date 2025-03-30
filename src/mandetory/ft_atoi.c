@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:32:03 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:48:20 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 16:51:50 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// converts str to int
 
 int	ft_atoi(const char *str)
 {

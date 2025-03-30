@@ -6,11 +6,14 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:18 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:35:07 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:14:37 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// adds characters from src to dest, until there is no space left
+// returns length of concatenated string
 
 size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 {

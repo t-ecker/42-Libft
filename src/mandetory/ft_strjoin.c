@@ -6,11 +6,13 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:12 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:35:04 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:09:42 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// allocates and returns a new string, result of the concatenation of s1 and s2
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

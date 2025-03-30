@@ -6,11 +6,14 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:24 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:35:10 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:16:29 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
+
+// copies characters from src to dest, but makes sure there is space for it
+// returns length of copied content if space was there for all
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 {
