@@ -30,6 +30,7 @@ cd libft
 
 ```bash
 make
+make bonus
 ```
 
 This generates **libft.a**, the static library containing all implemented functions.
