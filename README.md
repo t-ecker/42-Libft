@@ -1,12 +1,12 @@
 # Libft - 42 School
 
-## 🏆 Score: **XX/100**
+### 🏆 Score: **125/100**
 
 ## 📖 About the Project
+Libft is a custom implementation of standard C library functions, built from scratch. It is the starting point for learning the fundamentals of C programming, memory management, function implementation, and coding style.
 
 🛠️ *Note: This version of Libft includes additional functions like* `ft_printf` *and* `get_next_line` *that were not part of the initial subject.*
 
-Libft is a custom implementation of standard C library functions, built from scratch. It is the starting point for learning the fundamentals of C programming, memory management, function implementation, and coding style.
 
 ## 📚 What I Learned
 
@@ -14,11 +14,6 @@ Libft is a custom implementation of standard C library functions, built from scr
 - Manual memory allocation and management
 - String manipulation and linked lists
 - Writing reusable and clean code
-
-## ⚙️ Technologies Used
-
-- **Language:** C
-- **Compiler:** GCC
 
 ## 🚀 Usage
 
@@ -41,10 +36,10 @@ This generates **libft.a**, the static library containing all implemented functi
 
 ### 3️⃣ Use it in Your Project
 
-You can include **libft** in your own C projects by linking it during compilation:
+To use **libft** in your own C projects, add the following flags when compiling:
 
 ```bash
-gcc -Wall -Wextra -Werror your_file.c -L. -lft -o your_program
+-L path/to/libft.a -I path/to/libft.h
 ```
 
 ### 4️⃣ Include the Header
@@ -59,17 +54,14 @@ Make sure to include the library header in your source files:
 
 Libft is a core library that serves as a foundation for several projects at 42, including:
 
-- **ft\_printf** (custom printf implementation)
-- **get\_next\_line** (efficient file reading function)
-- **push\_swap** (sorting algorithm project)
-- **minishell** (basic shell implementation)
-- **cub3d** (simple 3D game engine using raycasting)
+- [**ft\_printf**](https://github.com/t-ecker/42-ft_printf) (custom printf implementation)
+- [**get\_next\_line**](https://github.com/t-ecker/42-get_next_line) (efficient file reading function)
+- [**push\_swap**](https://github.com/t-ecker/42-push_swap) (sorting algorithm project)
+- [**fdf**](https://github.com/t-ecker/42-fdf) (wireframe model visualization with a 3D view of the data)
+- [**minishell**](https://github.com/t-ecker/42-minishell) (basic shell implementation)
+- [**cub3d**](https://github.com/t-ecker/42-cub3d) (simple 3D game engine using raycasting)
 
 ## 🏁 Conclusion
 
 Libft is a foundational project at 42 that strengthens core C programming skills. It serves as a great resource for future projects requiring basic utility functions.
-
----
-
-📌 *Project completed as part of 42 School's curriculum.*
 
