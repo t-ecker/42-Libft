@@ -1,6 +1,6 @@
 # Libft - 42 School
 
-### 🏆 Score: **125/100**
+### 🏆 Score: **125/100** (+25 for bonus)
 
 ## 📖 About the Project
 Libft is a custom implementation of standard C library functions, built from scratch. It is the starting point for learning the fundamentals of C programming, memory management, function implementation, and coding style.
@@ -10,10 +10,10 @@ Libft is a custom implementation of standard C library functions, built from scr
 
 ## 📚 What I Learned
 
-- Deep understanding of C standard library functions
-- Manual memory allocation and management
-- String manipulation and linked lists
-- Writing reusable and clean code
+- **Memory Management**: Deep understanding of allocation, deallocation, and manipulation
+- **String Manipulation**: Comprehensive knowledge of string operations
+- **Data Structures**: Implementation of linked lists and associated operations
+- **Coding Standards**: Adherence to the 42 Norm and clean code principles
 
 ## 🚀 Usage
 
