@@ -54,8 +54,6 @@ Make sure to include the library header in your source files:
 
 Libft is a core library that serves as a foundation for several projects at 42, including:
 
-- [**ft\_printf**](https://github.com/t-ecker/42-ft_printf) (custom printf implementation)
-- [**get\_next\_line**](https://github.com/t-ecker/42-get_next_line) (efficient file reading function)
 - [**push\_swap**](https://github.com/t-ecker/42-push_swap) (sorting algorithm project)
 - [**fdf**](https://github.com/t-ecker/42-fdf) (wireframe model visualization with a 3D view of the data)
 - [**minishell**](https://github.com/t-ecker/42-minishell) (basic shell implementation)
