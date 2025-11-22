@@ -12,6 +12,7 @@ SRC = \
 	./src/mandetory/ft_isascii.c \
 	./src/mandetory/ft_isdigit.c \
 	./src/mandetory/ft_isprint.c \
+	./src/mandetory/ft_isspace.c \
 	./src/mandetory/ft_itoa.c \
 	./src/mandetory/ft_memchr.c \
 	./src/mandetory/ft_memcmp.c \
