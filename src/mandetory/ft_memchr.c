@@ -6,7 +6,7 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:32:58 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 16:59:45 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/11/22 00:35:50 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (str[i] == (unsigned char)c)
-			return ((void *)&s[i]);
+			return ((void *)(str + i));
 		i++;
 	}
 	return (NULL);
