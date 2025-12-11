@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 16:27:21 by tecker            #+#    #+#             */
-/*   Updated: 2024/11/20 13:21:35 by tecker           ###   ########.fr       */
+/*   Updated: 2025/12/11 23:54:31 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-
-#include "../../libft.h"
+# include "../../libft.h"
 
 int	ft_putnbr(int n);
 int	ft_putpointer(void *ptr);

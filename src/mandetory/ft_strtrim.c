@@ -6,13 +6,14 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 18:34:59 by tecker            #+#    #+#             */
-/*   Updated: 2025/03/30 17:21:27 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/12/11 23:53:41 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-// returns a new allocated string that removed character of set from beginning and end of s1
+// returns a new allocated string that removed
+// character of set from beginning and end of s1
 
 static int	ft_strwrite(int start, int end, char *ptr, const char *s1)
 {

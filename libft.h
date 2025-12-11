@@ -6,7 +6,7 @@
 /*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 19:30:07 by tecker            #+#    #+#             */
-/*   Updated: 2025/11/22 00:38:50 by tomecker         ###   ########.fr       */
+/*   Updated: 2025/12/11 23:52:29 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,6 @@ t_list		*ft_lstnew(void *content);
 int			ft_lstsize(t_list *lst);
 void		ft_lstadd_front(t_list **lst, t_list *new);
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-
 
 //extra
 char		*get_next_line(int fd);
